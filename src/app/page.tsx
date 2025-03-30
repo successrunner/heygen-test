@@ -76,12 +76,7 @@ export default function Home() {
 
       handleInsertAvatarVideo(createAvatarVideoResult.data.video_id);
     }
-  }, [
-    script,
-    selectedAvatar,
-    createAvatarVideoResult,
-    isSuccessCreatingAvatarVideo,
-  ]);
+  }, [createAvatarVideoResult, isSuccessCreatingAvatarVideo]);
 
   return (
     <QueryClientProvider client={queryClient}>
